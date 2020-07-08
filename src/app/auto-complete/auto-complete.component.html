@@ -1,0 +1,17 @@
+<div>
+  Match any character :
+
+  <input type="text" (focus)="ashow=true;"  class="form-control" (input)=matchAnyCharater(aChar) [(ngModel)]="aChar" placeholder="Match"/>
+  <ul id="AnyCharList" *ngIf="any_char_list.length && ashow">
+    <li *ngFor="let item of any_char_list" (click)="setItem('aChar', item)">{{item}}</li>
+  </ul>
+</div>
+
+<div class="mt-5">
+  Match First character : 
+
+  <input type="text" (focus)="fshow=true;" class="form-control" (input)=matchFirstCharater(fChar) [(ngModel)]="fChar" placeholder="Pick One" />
+  <ul id="firstCharList" *ngIf="first_charList.length && fshow">
+    <li *ngFor="let item of first_charList" (click)="setItem('fChar', item)">{{item}}</li>
+  </ul>
+</div>

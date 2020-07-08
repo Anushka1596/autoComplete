@@ -1,0 +1,25 @@
+input{
+  border: none;
+  border-bottom: 2px solid plum;
+  
+}
+input:focus{
+ border: none;
+}
+
+ul {
+  list-style: none;
+   border: 1px solid black;
+    width: 150px;
+    pointer-events: auto;
+    box-sizing: border-box;
+    margin: 1% 25%;
+}
+ul li{
+  margin: 10px;
+  cursor: pointer;
+  
+}
+.mt-5{
+  margin-top:5%
+}
